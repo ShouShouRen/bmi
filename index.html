@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>你胖了嗎?</title>
+</head>
+
+<body>
+    <div class="box">
+        <h1>bmi</h1>
+        <input type="text" id="height" placeholder="請輸入身高CM">
+        <input type="text" id="weight" placeholder="請輸入體重KG">
+        <button id="btn" type="button" onclick="BMI()">計算</button>
+        <h3>
+            BMI:<span id="val"></span><br>
+            判定:<span id="judge"></span>
+        </h3>
+    </div>
+    <details>
+        <summary>健康說明</summary>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">檢次結果說明</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;18</td>
+                    <td>過輕</td>
+                </tr>
+                <tr>
+                    <td>&lt;24</td>
+                    <td>標準</td>
+                </tr>
+                <tr>
+                    <td>&lt;27</td>
+                    <td>過重</td>
+                </tr>
+                <tr>
+                    <td>&lt;30</td>
+                    <td>輕度肥胖</td>
+                </tr>
+                <tr>
+                    <td>&lt;34</td>
+                    <td>中度度肥胖</td>
+                </tr>
+                <tr>
+                    <td>&gt;=34</td>
+                    <td>重度度肥胖</td>
+                </tr>
+            </tbody>
+        </table>
+    </details>
+</body>
+<script src="all.js"></script>
+
+</html>
